@@ -13,9 +13,8 @@ const nextConfig = {
   },
   swcMinify: true,
   poweredByHeader: false,
-  experimental: {
-    optimizeCss: true
-  }
+  experimental: {}
+  // Removed optimizeCss as it conflicts with static page generation
 };
 
 export default nextConfig;
