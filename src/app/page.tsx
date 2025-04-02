@@ -18,8 +18,41 @@ export default function Home() {
 
   return (
     <main className="min-h-screen">
+      {/* Intro Section */}
+      <section className="relative h-screen flex items-center justify-center bg-charcoal">
+        <div className="absolute inset-0 overflow-hidden">
+          <Image
+            src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1600&q=80"
+            alt="Intro background"
+            fill
+            className="object-cover opacity-30"
+            priority
+          />
+        </div>
+        <div className="relative text-center text-iceblue p-8 max-w-4xl mx-auto">
+          <h1 className="text-7xl font-extralight mb-8 tracking-wider">Welcome to Stylr</h1>
+          <p className="text-2xl mb-12 font-light tracking-wider leading-relaxed">
+            Where timeless elegance meets contemporary fashion.<br />
+            Discover a curated collection that defines your unique style.
+          </p>
+          <div className="flex justify-center space-x-6">
+            <Link 
+              href="/shop"
+              className="bg-transparent text-iceblue px-12 py-4 border-2 border-iceblue hover:bg-iceblue hover:text-charcoal transition-all duration-300 tracking-widest text-sm"
+            >
+              EXPLORE COLLECTION
+            </Link>
+          </div>
+          <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg className="w-6 h-6 text-iceblue" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+          </div>
+        </div>
+      </section>
+
       {/* Hero Section */}
-      <section className="relative h-[90vh] flex items-center justify-center bg-charcoal">
+      <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-b from-charcoal to-gray-900">
         <div className="absolute inset-0 overflow-hidden">
           <Image
             src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=1600&q=80"
@@ -30,11 +63,11 @@ export default function Home() {
           />
         </div>
         <div className="relative text-center text-iceblue p-8 max-w-3xl mx-auto">
-          <h1 className="text-6xl font-light mb-8 tracking-wide">Timeless Style</h1>
+          <h2 className="text-5xl font-light mb-8 tracking-wide">Timeless Style</h2>
           <p className="text-xl mb-10 font-light tracking-wider">Curated collections for the modern individual</p>
           <Link 
             href="/shop"
-            className="bg-transparent text-iceblue px-12 py-4 border border-iceblue hover:bg-iceblue hover:text-charcoal transition-all duration-300 tracking-widest text-sm"
+            className="bg-iceblue text-charcoal px-12 py-4 hover:bg-transparent hover:text-iceblue hover:border-iceblue border-2 border-iceblue transition-all duration-300 tracking-widest text-sm"
           >
             EXPLORE
           </Link>

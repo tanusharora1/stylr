@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Stylr",
+    "slug": "stylr",
+    "version": "1.0.0",
+    "newArchEnabled": true,
+    "orientation": "portrait",
+    "icon": "./assets/icon.svg",
+    "userInterfaceStyle": "dark",
+    "platforms": ["ios", "android"],
+    "splash": {
+      "image": "./assets/icon.svg",
+      "resizeMode": "contain",
+      "backgroundColor": "#1A1D1F"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.stylr.mobile",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.svg",
+        "backgroundColor": "#1A1D1F"
+      },
+      "package": "com.stylr.mobile",
+      "versionCode": 1
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5bd05862-e26e-4d2f-983b-c83a0042ccec"
+      }
+    },
+    "owner": "tanusharora"
+  }
+}

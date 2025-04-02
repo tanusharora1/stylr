@@ -1,0 +1,14 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="#1C1C1C"/>
+  
+  <!-- Stylized 'S' -->
+  <path d="M130 70C130 50 75 45 75 70C75 95 125 85 125 110C125 135 70 130 70 110" stroke="#D6EFFF" stroke-width="12" stroke-linecap="round"/>
+  
+  <!-- Fashion Element: Thread/Needle -->
+  <line x1="60" y1="140" x2="140" y2="60" stroke="#D6EFFF" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Small Decorative Dots -->
+  <circle cx="60" cy="140" r="3" fill="#D6EFFF"/>
+  <circle cx="140" cy="60" r="3" fill="#D6EFFF"/>
+</svg>
